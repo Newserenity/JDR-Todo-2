@@ -8,7 +8,12 @@
 import Foundation
 import Alamofire
 
+/**
+ * - Description: 라우터를 미리 enum 형식으로 만들어 놓음
+ */
 enum Router: URLRequestConvertible {
+    
+    
     case getTodos(page: Int,
                   orderByDate: OrderByDate = .created,
                   orderByIndex: OrderByIndex = .descending,
@@ -41,8 +46,6 @@ enum Router: URLRequestConvertible {
                 "per_page": String(perPage),
                 "is_done": isDone.rawValue,
             ]
-            
-//        default: return nil
         }
     }
     

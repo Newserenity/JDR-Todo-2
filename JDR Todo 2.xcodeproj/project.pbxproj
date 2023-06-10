@@ -37,6 +37,12 @@
 		B20376792A348D83000987BF /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376782A348D83000987BF /* Date+Ext.swift */; };
 		B203767C2A348ECD000987BF /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B203767B2A348ECD000987BF /* NetworkError.swift */; };
 		B203767E2A3490ED000987BF /* Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = B203767D2A3490ED000987BF /* Params.swift */; };
+		B20376802A34FB7B000987BF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B203767F2A34FB7B000987BF /* Utils.swift */; };
+		B20376832A34FD5A000987BF /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376822A34FD5A000987BF /* SearchBarView.swift */; };
+		B20376852A34FD94000987BF /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376842A34FD94000987BF /* BaseView.swift */; };
+		B20376872A34FF8E000987BF /* TodoTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376862A34FF8E000987BF /* TodoTableView.swift */; };
+		B20376892A34FFA0000987BF /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376882A34FFA0000987BF /* TodoTableViewCell.swift */; };
+		B203768B2A35008F000987BF /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B203768A2A35008F000987BF /* BaseTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +90,12 @@
 		B20376782A348D83000987BF /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		B203767B2A348ECD000987BF /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		B203767D2A3490ED000987BF /* Params.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Params.swift; sourceTree = "<group>"; };
+		B203767F2A34FB7B000987BF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B20376822A34FD5A000987BF /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		B20376842A34FD94000987BF /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		B20376862A34FF8E000987BF /* TodoTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableView.swift; sourceTree = "<group>"; };
+		B20376882A34FFA0000987BF /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
+		B203768A2A35008F000987BF /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,7 +203,10 @@
 			isa = PBXGroup;
 			children = (
 				B20376472A33EE9F000987BF /* BaseVC.swift */,
+				B20376842A34FD94000987BF /* BaseView.swift */,
+				B203768A2A35008F000987BF /* BaseTableViewCell.swift */,
 				B20376492A33EEBA000987BF /* Constant.swift */,
+				B203767F2A34FB7B000987BF /* Utils.swift */,
 				B20376462A33EE39000987BF /* Protocols */,
 				B20376452A33EE2C000987BF /* Extensions */,
 			);
@@ -274,7 +289,10 @@
 		B20376692A33F38E000987BF /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B20376812A34FD22000987BF /* ModalWindows */,
 				B203766A2A33F3B7000987BF /* Cells */,
+				B20376822A34FD5A000987BF /* SearchBarView.swift */,
+				B20376862A34FF8E000987BF /* TodoTableView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -282,6 +300,7 @@
 		B203766A2A33F3B7000987BF /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				B20376882A34FFA0000987BF /* TodoTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -293,6 +312,13 @@
 				B203767D2A3490ED000987BF /* Params.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		B20376812A34FD22000987BF /* ModalWindows */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModalWindows;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,8 +466,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B20376832A34FD5A000987BF /* SearchBarView.swift in Sources */,
 				B203767C2A348ECD000987BF /* NetworkError.swift in Sources */,
 				B20376622A33F10F000987BF /* Router.swift in Sources */,
+				B20376872A34FF8E000987BF /* TodoTableView.swift in Sources */,
+				B20376892A34FFA0000987BF /* TodoTableViewCell.swift in Sources */,
 				B20376142A33EAB2000987BF /* MainVC.swift in Sources */,
 				B20376772A348D47000987BF /* UIView+Ext.swift in Sources */,
 				B20376792A348D83000987BF /* Date+Ext.swift in Sources */,
@@ -453,10 +482,13 @@
 				B20376602A33F107000987BF /* NetworkManager.swift in Sources */,
 				B20376732A348B36000987BF /* TodoListEntity.swift in Sources */,
 				B20376122A33EAB2000987BF /* SceneDelegate.swift in Sources */,
+				B203768B2A35008F000987BF /* BaseTableViewCell.swift in Sources */,
 				B20376712A348A80000987BF /* TodoCardModel.swift in Sources */,
 				B203766F2A34894F000987BF /* MainVM.swift in Sources */,
 				B203766D2A33F711000987BF /* SettingVC.swift in Sources */,
 				B20376482A33EE9F000987BF /* BaseVC.swift in Sources */,
+				B20376852A34FD94000987BF /* BaseView.swift in Sources */,
+				B20376802A34FB7B000987BF /* Utils.swift in Sources */,
 				B203764A2A33EEBA000987BF /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

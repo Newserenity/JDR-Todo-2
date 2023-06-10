@@ -23,7 +23,7 @@ final class MainVM {
     init(){
         
         NetworkManager.shared
-            .getTodosRX()
+            .getTodos()
             .subscribe(onNext: todoCards.accept(_:),
                        onError: errEvent.accept(_:))
             .disposed(by: disposeBag)

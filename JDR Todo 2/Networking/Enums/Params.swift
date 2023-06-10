@@ -8,9 +8,8 @@
 import Foundation
 
 /**
- *##파일 설명: 쿼리파람에 사용하는 enum값 모음
+ * - Description : 쿼리파람에 사용하는 enum값 모음
  */
-
 enum OrderByIndex: String {
     case ascending = "asc"
     case descending = "desc"
