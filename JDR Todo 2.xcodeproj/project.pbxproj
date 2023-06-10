@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B20376102A33EAB2000987BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B203760F2A33EAB2000987BF /* AppDelegate.swift */; };
 		B20376122A33EAB2000987BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376112A33EAB2000987BF /* SceneDelegate.swift */; };
-		B20376142A33EAB2000987BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376132A33EAB2000987BF /* ViewController.swift */; };
+		B20376142A33EAB2000987BF /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376132A33EAB2000987BF /* MainVC.swift */; };
 		B203761A2A33EAB2000987BF /* JDR_Todo_2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B20376182A33EAB2000987BF /* JDR_Todo_2.xcdatamodeld */; };
 		B203761C2A33EAB4000987BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B203761B2A33EAB4000987BF /* Assets.xcassets */; };
 		B203761F2A33EAB4000987BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B203761D2A33EAB4000987BF /* LaunchScreen.storyboard */; };
@@ -28,6 +28,15 @@
 		B20376602A33F107000987BF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B203765F2A33F107000987BF /* NetworkManager.swift */; };
 		B20376622A33F10F000987BF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376612A33F10F000987BF /* Router.swift */; };
 		B20376642A33F11B000987BF /* BaseInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376632A33F11B000987BF /* BaseInterceptor.swift */; };
+		B203766D2A33F711000987BF /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B203766C2A33F711000987BF /* SettingVC.swift */; };
+		B203766F2A34894F000987BF /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B203766E2A34894F000987BF /* MainVM.swift */; };
+		B20376712A348A80000987BF /* TodoCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376702A348A80000987BF /* TodoCardModel.swift */; };
+		B20376732A348B36000987BF /* TodoListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376722A348B36000987BF /* TodoListEntity.swift */; };
+		B20376752A348B88000987BF /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376742A348B88000987BF /* UIViewController+Ext.swift */; };
+		B20376772A348D47000987BF /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376762A348D47000987BF /* UIView+Ext.swift */; };
+		B20376792A348D83000987BF /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376782A348D83000987BF /* Date+Ext.swift */; };
+		B203767C2A348ECD000987BF /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B203767B2A348ECD000987BF /* NetworkError.swift */; };
+		B203767E2A3490ED000987BF /* Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = B203767D2A3490ED000987BF /* Params.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +60,7 @@
 		B203760C2A33EAB2000987BF /* JDR Todo 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JDR Todo 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B203760F2A33EAB2000987BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B20376112A33EAB2000987BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B20376132A33EAB2000987BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B20376132A33EAB2000987BF /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B20376192A33EAB2000987BF /* JDR_Todo_2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JDR_Todo_2.xcdatamodel; sourceTree = "<group>"; };
 		B203761B2A33EAB4000987BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B203761E2A33EAB4000987BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,6 +75,15 @@
 		B203765F2A33F107000987BF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		B20376612A33F10F000987BF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		B20376632A33F11B000987BF /* BaseInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInterceptor.swift; sourceTree = "<group>"; };
+		B203766C2A33F711000987BF /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		B203766E2A34894F000987BF /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
+		B20376702A348A80000987BF /* TodoCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCardModel.swift; sourceTree = "<group>"; };
+		B20376722A348B36000987BF /* TodoListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListEntity.swift; sourceTree = "<group>"; };
+		B20376742A348B88000987BF /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		B20376762A348D47000987BF /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		B20376782A348D83000987BF /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		B203767B2A348ECD000987BF /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		B203767D2A3490ED000987BF /* Params.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Params.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +201,9 @@
 		B20376452A33EE2C000987BF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B20376742A348B88000987BF /* UIViewController+Ext.swift */,
+				B20376762A348D47000987BF /* UIView+Ext.swift */,
+				B20376782A348D83000987BF /* Date+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -198,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				B203765E2A33F0D5000987BF /* Entitys */,
+				B203767A2A348EB6000987BF /* Enums */,
 				B203765F2A33F107000987BF /* NetworkManager.swift */,
 				B20376612A33F10F000987BF /* Router.swift */,
 				B20376632A33F11B000987BF /* BaseInterceptor.swift */,
@@ -208,6 +230,7 @@
 		B203765E2A33F0D5000987BF /* Entitys */ = {
 			isa = PBXGroup;
 			children = (
+				B20376722A348B36000987BF /* TodoListEntity.swift */,
 			);
 			path = Entitys;
 			sourceTree = "<group>";
@@ -225,6 +248,7 @@
 		B20376662A33F329000987BF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B20376702A348A80000987BF /* TodoCardModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -232,6 +256,7 @@
 		B20376672A33F338000987BF /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B203766E2A34894F000987BF /* MainVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -240,7 +265,8 @@
 			isa = PBXGroup;
 			children = (
 				B20376692A33F38E000987BF /* Components */,
-				B20376132A33EAB2000987BF /* ViewController.swift */,
+				B20376132A33EAB2000987BF /* MainVC.swift */,
+				B203766C2A33F711000987BF /* SettingVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -258,6 +284,15 @@
 			children = (
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		B203767A2A348EB6000987BF /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				B203767B2A348ECD000987BF /* NetworkError.swift */,
+				B203767D2A3490ED000987BF /* Params.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,13 +440,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B203767C2A348ECD000987BF /* NetworkError.swift in Sources */,
 				B20376622A33F10F000987BF /* Router.swift in Sources */,
-				B20376142A33EAB2000987BF /* ViewController.swift in Sources */,
+				B20376142A33EAB2000987BF /* MainVC.swift in Sources */,
+				B20376772A348D47000987BF /* UIView+Ext.swift in Sources */,
+				B20376792A348D83000987BF /* Date+Ext.swift in Sources */,
+				B20376752A348B88000987BF /* UIViewController+Ext.swift in Sources */,
 				B20376642A33F11B000987BF /* BaseInterceptor.swift in Sources */,
 				B203761A2A33EAB2000987BF /* JDR_Todo_2.xcdatamodeld in Sources */,
 				B20376102A33EAB2000987BF /* AppDelegate.swift in Sources */,
+				B203767E2A3490ED000987BF /* Params.swift in Sources */,
 				B20376602A33F107000987BF /* NetworkManager.swift in Sources */,
+				B20376732A348B36000987BF /* TodoListEntity.swift in Sources */,
 				B20376122A33EAB2000987BF /* SceneDelegate.swift in Sources */,
+				B20376712A348A80000987BF /* TodoCardModel.swift in Sources */,
+				B203766F2A34894F000987BF /* MainVM.swift in Sources */,
+				B203766D2A33F711000987BF /* SettingVC.swift in Sources */,
 				B20376482A33EE9F000987BF /* BaseVC.swift in Sources */,
 				B203764A2A33EEBA000987BF /* Constant.swift in Sources */,
 			);

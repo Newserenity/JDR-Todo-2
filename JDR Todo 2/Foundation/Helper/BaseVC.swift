@@ -25,6 +25,18 @@ class BaseVC: UIViewController {
         setConstraint()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // navbar hide setting
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        // navbar hide setting
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     //MARK: - View Method
     /**
      - Description: RX에 대한 데이터 바인딩 메서드
