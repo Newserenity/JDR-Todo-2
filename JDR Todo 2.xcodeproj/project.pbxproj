@@ -10,13 +10,24 @@
 		B20376102A33EAB2000987BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B203760F2A33EAB2000987BF /* AppDelegate.swift */; };
 		B20376122A33EAB2000987BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376112A33EAB2000987BF /* SceneDelegate.swift */; };
 		B20376142A33EAB2000987BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376132A33EAB2000987BF /* ViewController.swift */; };
-		B20376172A33EAB2000987BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20376152A33EAB2000987BF /* Main.storyboard */; };
 		B203761A2A33EAB2000987BF /* JDR_Todo_2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B20376182A33EAB2000987BF /* JDR_Todo_2.xcdatamodeld */; };
 		B203761C2A33EAB4000987BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B203761B2A33EAB4000987BF /* Assets.xcassets */; };
 		B203761F2A33EAB4000987BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B203761D2A33EAB4000987BF /* LaunchScreen.storyboard */; };
 		B203762A2A33EAB4000987BF /* JDR_Todo_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376292A33EAB4000987BF /* JDR_Todo_2Tests.swift */; };
 		B20376342A33EAB4000987BF /* JDR_Todo_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376332A33EAB4000987BF /* JDR_Todo_2UITests.swift */; };
 		B20376362A33EAB4000987BF /* JDR_Todo_2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376352A33EAB4000987BF /* JDR_Todo_2UITestsLaunchTests.swift */; };
+		B20376482A33EE9F000987BF /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376472A33EE9F000987BF /* BaseVC.swift */; };
+		B203764A2A33EEBA000987BF /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376492A33EEBA000987BF /* Constant.swift */; };
+		B203764D2A33EF69000987BF /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B203764C2A33EF69000987BF /* RxCocoa */; };
+		B203764F2A33EF69000987BF /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = B203764E2A33EF69000987BF /* RxRelay */; };
+		B20376512A33EF69000987BF /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B20376502A33EF69000987BF /* RxSwift */; };
+		B20376532A33EF69000987BF /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = B20376522A33EF69000987BF /* RxTest */; };
+		B20376562A33EF8A000987BF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B20376552A33EF8A000987BF /* SnapKit */; };
+		B20376592A33EFB4000987BF /* RxAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B20376582A33EFB4000987BF /* RxAlamofire */; };
+		B203765C2A33EFE7000987BF /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = B203765B2A33EFE7000987BF /* Then */; };
+		B20376602A33F107000987BF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B203765F2A33F107000987BF /* NetworkManager.swift */; };
+		B20376622A33F10F000987BF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376612A33F10F000987BF /* Router.swift */; };
+		B20376642A33F11B000987BF /* BaseInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20376632A33F11B000987BF /* BaseInterceptor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +52,6 @@
 		B203760F2A33EAB2000987BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B20376112A33EAB2000987BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B20376132A33EAB2000987BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B20376162A33EAB2000987BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B20376192A33EAB2000987BF /* JDR_Todo_2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JDR_Todo_2.xcdatamodel; sourceTree = "<group>"; };
 		B203761B2A33EAB4000987BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B203761E2A33EAB4000987BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +61,11 @@
 		B203762F2A33EAB4000987BF /* JDR Todo 2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JDR Todo 2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20376332A33EAB4000987BF /* JDR_Todo_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDR_Todo_2UITests.swift; sourceTree = "<group>"; };
 		B20376352A33EAB4000987BF /* JDR_Todo_2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDR_Todo_2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B20376472A33EE9F000987BF /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		B20376492A33EEBA000987BF /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		B203765F2A33F107000987BF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B20376612A33F10F000987BF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B20376632A33F11B000987BF /* BaseInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInterceptor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B20376532A33EF69000987BF /* RxTest in Frameworks */,
+				B20376512A33EF69000987BF /* RxSwift in Frameworks */,
+				B203764F2A33EF69000987BF /* RxRelay in Frameworks */,
+				B203765C2A33EFE7000987BF /* Then in Frameworks */,
+				B20376592A33EFB4000987BF /* RxAlamofire in Frameworks */,
+				B203764D2A33EF69000987BF /* RxCocoa in Frameworks */,
+				B20376562A33EF8A000987BF /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,12 +125,9 @@
 			children = (
 				B203760F2A33EAB2000987BF /* AppDelegate.swift */,
 				B20376112A33EAB2000987BF /* SceneDelegate.swift */,
-				B20376132A33EAB2000987BF /* ViewController.swift */,
-				B20376152A33EAB2000987BF /* Main.storyboard */,
-				B203761B2A33EAB4000987BF /* Assets.xcassets */,
-				B203761D2A33EAB4000987BF /* LaunchScreen.storyboard */,
-				B20376202A33EAB4000987BF /* Info.plist */,
-				B20376182A33EAB2000987BF /* JDR_Todo_2.xcdatamodeld */,
+				B20376652A33F17E000987BF /* Main */,
+				B203765D2A33F0C1000987BF /* Networking */,
+				B20376422A33ED71000987BF /* Foundation */,
 			);
 			path = "JDR Todo 2";
 			sourceTree = "<group>";
@@ -130,6 +149,117 @@
 			path = "JDR Todo 2UITests";
 			sourceTree = "<group>";
 		};
+		B20376422A33ED71000987BF /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				B20376442A33EE0E000987BF /* Helper */,
+				B20376432A33EDD3000987BF /* SupportingFiles */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		B20376432A33EDD3000987BF /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B203761D2A33EAB4000987BF /* LaunchScreen.storyboard */,
+				B20376202A33EAB4000987BF /* Info.plist */,
+				B20376182A33EAB2000987BF /* JDR_Todo_2.xcdatamodeld */,
+				B203761B2A33EAB4000987BF /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B20376442A33EE0E000987BF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B20376472A33EE9F000987BF /* BaseVC.swift */,
+				B20376492A33EEBA000987BF /* Constant.swift */,
+				B20376462A33EE39000987BF /* Protocols */,
+				B20376452A33EE2C000987BF /* Extensions */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B20376452A33EE2C000987BF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B20376462A33EE39000987BF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B203765D2A33F0C1000987BF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B203765E2A33F0D5000987BF /* Entitys */,
+				B203765F2A33F107000987BF /* NetworkManager.swift */,
+				B20376612A33F10F000987BF /* Router.swift */,
+				B20376632A33F11B000987BF /* BaseInterceptor.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B203765E2A33F0D5000987BF /* Entitys */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entitys;
+			sourceTree = "<group>";
+		};
+		B20376652A33F17E000987BF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B20376662A33F329000987BF /* Models */,
+				B20376672A33F338000987BF /* ViewModels */,
+				B20376682A33F35C000987BF /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B20376662A33F329000987BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B20376672A33F338000987BF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B20376682A33F35C000987BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B20376692A33F38E000987BF /* Components */,
+				B20376132A33EAB2000987BF /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B20376692A33F38E000987BF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B203766A2A33F3B7000987BF /* Cells */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B203766A2A33F3B7000987BF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +276,15 @@
 			dependencies = (
 			);
 			name = "JDR Todo 2";
+			packageProductDependencies = (
+				B203764C2A33EF69000987BF /* RxCocoa */,
+				B203764E2A33EF69000987BF /* RxRelay */,
+				B20376502A33EF69000987BF /* RxSwift */,
+				B20376522A33EF69000987BF /* RxTest */,
+				B20376552A33EF8A000987BF /* SnapKit */,
+				B20376582A33EFB4000987BF /* RxAlamofire */,
+				B203765B2A33EFE7000987BF /* Then */,
+			);
 			productName = "JDR Todo 2";
 			productReference = B203760C2A33EAB2000987BF /* JDR Todo 2.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +357,12 @@
 				Base,
 			);
 			mainGroup = B20376032A33EAB2000987BF;
+			packageReferences = (
+				B203764B2A33EF69000987BF /* XCRemoteSwiftPackageReference "RxSwift" */,
+				B20376542A33EF8A000987BF /* XCRemoteSwiftPackageReference "SnapKit" */,
+				B20376572A33EFB4000987BF /* XCRemoteSwiftPackageReference "RxAlamofire" */,
+				B203765A2A33EFE7000987BF /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = B203760D2A33EAB2000987BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,7 +381,6 @@
 			files = (
 				B203761F2A33EAB4000987BF /* LaunchScreen.storyboard in Resources */,
 				B203761C2A33EAB4000987BF /* Assets.xcassets in Resources */,
-				B20376172A33EAB2000987BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +405,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B20376622A33F10F000987BF /* Router.swift in Sources */,
 				B20376142A33EAB2000987BF /* ViewController.swift in Sources */,
+				B20376642A33F11B000987BF /* BaseInterceptor.swift in Sources */,
 				B203761A2A33EAB2000987BF /* JDR_Todo_2.xcdatamodeld in Sources */,
 				B20376102A33EAB2000987BF /* AppDelegate.swift in Sources */,
+				B20376602A33F107000987BF /* NetworkManager.swift in Sources */,
 				B20376122A33EAB2000987BF /* SceneDelegate.swift in Sources */,
+				B20376482A33EE9F000987BF /* BaseVC.swift in Sources */,
+				B203764A2A33EEBA000987BF /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +450,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B20376152A33EAB2000987BF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B20376162A33EAB2000987BF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B203761D2A33EAB4000987BF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -451,19 +592,22 @@
 				INFOPLIST_FILE = "JDR Todo 2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.avocadojapan.JDR-Todo-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -479,19 +623,22 @@
 				INFOPLIST_FILE = "JDR Todo 2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.avocadojapan.JDR-Todo-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -611,6 +758,79 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B203764B2A33EF69000987BF /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+		B20376542A33EF8A000987BF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		B20376572A33EFB4000987BF /* XCRemoteSwiftPackageReference "RxAlamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxAlamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		B203765A2A33EFE7000987BF /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B203764C2A33EF69000987BF /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B203764B2A33EF69000987BF /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		B203764E2A33EF69000987BF /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B203764B2A33EF69000987BF /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		B20376502A33EF69000987BF /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B203764B2A33EF69000987BF /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		B20376522A33EF69000987BF /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B203764B2A33EF69000987BF /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		B20376552A33EF8A000987BF /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B20376542A33EF8A000987BF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		B20376582A33EFB4000987BF /* RxAlamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B20376572A33EFB4000987BF /* XCRemoteSwiftPackageReference "RxAlamofire" */;
+			productName = RxAlamofire;
+		};
+		B203765B2A33EFE7000987BF /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B203765A2A33EFE7000987BF /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B20376182A33EAB2000987BF /* JDR_Todo_2.xcdatamodeld */ = {
